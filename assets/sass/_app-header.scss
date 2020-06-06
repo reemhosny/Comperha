@@ -1,0 +1,243 @@
+ @import './variables';
+
+ .app-header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 38;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    .lower-buttons-mobile{
+        display: none;
+    }
+    
+    .overlay{
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        @media #{$xmd}{
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 74px;
+            height: 100vh;
+            background-color: rgba(0,0,0,.6);
+            display: block;
+            z-index: 2;
+        }
+    }
+    .wrap-main-menu{
+        display: flex;
+        align-items: center;
+        
+        @media #{$smd}{
+            display: none;
+        }
+    }
+    &.menuOpen{
+        @media #{$xmd}{
+            .wrap-main-menu{
+                right: 0;
+                width: 100%;
+            }
+            .overlay{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    @media #{$xmd}{
+        height: 74px;
+        .wrap-main-menu{
+            position: fixed;
+            right: -250px;
+            top: 74px;
+            z-index: 10;
+            width: 250px;
+            height: calc(100% - 74px);
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding-top: 1.5rem;
+            padding-bottom: 5rem;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            .main-menu{
+                height: 100%;
+                overflow-y: auto;
+                width: 100%;
+                .nav-item{
+                    border-bottom: 1px solid #eee;
+                    margin: 0 !important;
+                    .nav-link{
+                        padding: 15px 20px !important;
+                        display: block;
+                        &.active{
+                            color: $mainColor !important;
+                        }
+                        &:before{
+                            display: none !important;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+
+    
+    .wrap-btn-menu-mobil{
+        min-width: 33.3333%;
+        flex: 0 0 33.3333%;
+        display: none;
+        .btn-menu-mobile{
+            font-size: 22px;
+            @media #{$xs} {
+                width: 22px;  
+            }
+        }
+        @media #{$xmd}{
+           display: flex;
+        }
+        
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media #{$xmd}{
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+        .navbar-brand{
+            @media #{$xmd}{
+                min-width: 33.3333% !important;
+                flex: 0 0 33.3333%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 !important;
+            }
+            .brand-logo{
+                width: 181px;
+                height: 53px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .navbar-burger.burger.left{
+                margin-left: auto;
+                z-index: 2;
+            }
+            
+        }
+
+        .navbar-menu{
+            padding-right: 50px;
+            .navbar-end{
+                align-items: center;
+                .nav-item{
+                    &:not(:last-child){
+                        margin-left: 30px;
+                    }
+                    .nav-link{
+                        font-weight: 600;
+                        color: #000;
+                        font-size: 16px;
+                        padding: 15px 0;
+                        position: relative;
+                        font-family: $mainFont;
+                        &:before{
+                            content: '';
+                            left: 50%;
+                            height: 3px;
+                            width: 0;
+                            background-color: $mainColor;
+                            border-radius: 5px;
+                            position: absolute;
+                            bottom: 0;
+                            transition: all .3s ease;
+                        }
+                        &.active,&:hover{
+                            &:before{
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    @media #{$xmd}{
+                        margin-bottom: 1.3rem;
+                    }
+     
+                }
+            }
+
+            .navbar-start{
+
+                .button{
+                    &.btn-add{
+                        @media #{$xmd}{
+                            .icon{
+                                margin: 0 !important;
+                            }
+                            max-width: 45px;
+                            background-color: #FFBE00;
+                            border-color: transparent;
+                            color: rgba(0, 0, 0, 0.7) !important;
+                        }
+                    }
+                }
+                
+
+                .left-mobile{
+                    color: $secondColor;
+                    font-family: $secondFont;
+                    font-size: 22px;
+                    line-height: 25px;
+                    @media #{$smd}{
+                        display: none;
+                    }
+                    @media #{$xxs} {
+                        font-size: 18px;  
+                    }
+
+                }
+                .left-desktop{
+                    @media #{$xmd}{
+                        display: none;
+                    }
+
+                }
+
+            }
+        
+            @media #{$xmd}{
+                min-width: 33.3333% !important;
+                flex: 0 0 33.3333%;
+                padding: 0;
+                display: flex;
+                justify-content: flex-end;
+                box-shadow: none !important;
+            }
+
+        }
+
+ }
+
+
+}
+
+
+

@@ -1,0 +1,63 @@
+.button{
+    color: #363636;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    height: 44px;
+    line-height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $mainFont;
+    &.is-primary{
+        color: $mainColor !important;
+    }
+    &.is-outlined{
+        color: $mainColor !important;
+        border: 1px solid $mainColor;
+
+    }
+
+    &.is-white{
+       color: $mainColor !important;
+       border-radius: 12px;
+    }
+    &.btn-medium{
+       min-width: 120px; 
+    }
+    &.btn-larg{
+       min-width: 150px ; 
+
+    }
+    &.is-grey{
+        background-color: #CBCBCB;
+    }
+
+    &.is-rounded{
+        color: $mainColor !important;
+        border-radius: 20px;
+    }
+
+    &.btn-font{
+        font-weight: bold !important;
+    }
+    &.is-black{
+        border-radius: 20px;
+        color: $mainColor;
+        background-color: black;
+        opacity: 0.65;
+        min-width: 85px;
+    }
+    &.is-block{
+        width: 120px;
+        height: 40px;
+    }
+    &.is-icon{
+        line-height: 38px;
+    }
+}
+.btn-block{
+    width: 100%;
+    display: block;
+}

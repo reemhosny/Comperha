@@ -1,10 +1,12 @@
 // Colors
-$mainColor: #403e8c;
+$mainColor: #095AAE;
+$secondColor: #69AF44;
 
 
 
 // Fonts
 $mainFont: 'Cairo', sans-serif;
+$secondFont:'Ubuntu', sans-serif;
 $enFont:  'Open Sans', sans-serif;
 
 /////////// Media Query /////////
@@ -39,12 +41,4 @@ $lg: "(min-width: 992px) and (max-width: 1199.98px)";
 // Extra large devices (large desktops, 1200px and up)
 $xl: "min-width: 1200px";
 
-
-// Social Color
-$twitter: #55acee;
-$youtube: #FF080D;
-$facebook: #3b5999;
-$linkedin: #0077B5;
-$instagram: #e4405f;
-$google: #dd4b39;
 
