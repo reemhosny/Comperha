@@ -22,11 +22,72 @@
                   <div class="overlay" @click="menuOpen = false"></div>
                   <div class="wrap-main-menu">
                     <ul class="navbar-end main-menu">
-                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">الرئيسية</nuxt-link></li>
-                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">العقارات</nuxt-link></li>
-                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">المقارنة</nuxt-link></li>
-                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">الوسطاء</nuxt-link></li>
-                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">الخدمات العقارية</nuxt-link></li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/Home.png" class="ml-3 menue-icon">
+                      الرئيسية
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li>
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon1.png" class="ml-3 menue-icon">
+                      بطاقات الائتمان
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li>
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon2.png" class="ml-3 menue-icon">
+                      قروض السيارات
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li>
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon3 .png" class="ml-3 menue-icon">
+                      قروض شخصية
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li>
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon4 .png" class="ml-3 menue-icon">
+                      تأمين السفر
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon5.png" class="ml-3 menue-icon">
+                      تأمين السيارة
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/icon7.png" class="ml-3 menue-icon">
+                      تمويلات عقارية
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/Icon6.png" class="ml-3 menue-icon"> 
+                      تأمين المنزل
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/Info.png" class="ml-3 menue-icon">
+                      عن الموقع
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/DuplexLand.png" class="ml-3 menue-icon">
+                      مدونة
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png">
+                      </li> 
+                      <li class="nav-item"><nuxt-link to="/" active-class="active" exact class="nav-link">
+                      <img src="~/assets/images/Headphone.png" class="ml-3 menue-icon">
+                      تواصل معنا
+                      </nuxt-link>
+                      <img src="~/assets/images/ChevronLeft.png" class="ml-3 menue-icon">
+                      </li> 
                     </ul>
                   </div>
                   <div class="navbar-start">

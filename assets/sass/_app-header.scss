@@ -11,9 +11,7 @@
     background-color: #fff;
     z-index: 38;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    .lower-buttons-mobile{
-        display: none;
-    }
+   
     
     .overlay{
         visibility: hidden;
@@ -59,7 +57,7 @@
             top: 74px;
             z-index: 10;
             width: 250px;
-            height: calc(100% - 74px);
+            height: calc(100% - 25px);
             background-color: #fff;
             border: 1px solid #eee;
             padding-top: 1.5rem;
@@ -70,17 +68,32 @@
                 height: 100%;
                 overflow-y: auto;
                 width: 100%;
+                margin-top: -2.5rem;
                 .nav-item{
-                    border-bottom: 1px solid #eee;
+                    border-bottom: 0.5px solid #828282;
                     margin: 0 !important;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     .nav-link{
                         padding: 15px 20px !important;
-                        display: block;
+                        display: flex;
+                
                         &.active{
-                            color: $mainColor !important;
+                            color: $blackColor !important;
                         }
                         &:before{
                             display: none !important;
+                        }
+                    }
+
+                    .menue-icon{
+                        width: 22px;
+                        height: 23px;
+
+                        @media #{$xs} {
+                            margin-right: -0.4rem;
+                            
                         }
                     }
                 }
@@ -154,10 +167,12 @@
                     .nav-link{
                         font-weight: 600;
                         color: #000;
-                        font-size: 16px;
+                        font-size: 20px;
                         padding: 15px 0;
                         position: relative;
                         font-family: $mainFont;
+                        display: flex;
+                        align-items: center;
                         &:before{
                             content: '';
                             left: 50%;
