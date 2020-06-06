@@ -15,12 +15,11 @@
     "@nuxtjs/bulma": "^1.2.1",
     "axios": "^0.19.2",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.31"
+    "nuxt-buefy": "^0.3.31",
+    "nuxt-sass-resources-loader": "^2.0.5"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
-    "pug": "^3.0.0",
-    "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2"
   }
 }

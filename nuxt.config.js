@@ -23,8 +23,10 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+ css: [
+  '@/assets/css/bootstrap-grid.min.css',
+  '@/assets/sass/main.scss'
+],
   /*
   ** Plugins to load before mounting the App
   */
@@ -47,11 +49,12 @@ export default {
 
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+
+    'nuxt-sass-resources-loader',
+
   ],
 
-  css: [
-    '@/assets/css/bootstrap-grid.min'
-  ],
+ 
 
   /*
   ** Build configuration

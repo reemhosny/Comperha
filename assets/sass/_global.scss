@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* scrollbar for Firefox-only */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.15);
+
+/* scrollbar on Chrome/Edge/Safari */
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+  
+
+body{
+  font-family: $mainFont;
+  font-size: 15px;
+  color: #000;
+  direction: rtl;
+  background-color: white;
+  
+}
+
