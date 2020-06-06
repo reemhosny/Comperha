@@ -1,0 +1,26 @@
+{
+  "name": "comperha",
+  "version": "1.0.0",
+  "description": "My tremendous Nuxt.js project",
+  "author": "Reem Hosny",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/bulma": "^1.2.1",
+    "axios": "^0.19.2",
+    "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.31"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2"
+  }
+}
