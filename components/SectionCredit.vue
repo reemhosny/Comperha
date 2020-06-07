@@ -42,8 +42,8 @@
                 </div>
                 <div class="col-md-4 col-12 filter">
                     <div class="filter-btn">
-                        <a href="#" class="button is-primary ml-2">بطاقات الائتمان</a>
-                        <a href="#" class="button is-outlined ml-2"> قرض شخصي</a>
+                        <a href="#" class="button is-primary">بطاقات الائتمان</a>
+                        <a href="#" class="button is-outlined"> قرض شخصي</a>
                         <a href="#" class="button is-outlined">قرض سيارة</a>
                     </div>
                     <div class="filter-form">

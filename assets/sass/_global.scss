@@ -88,7 +88,6 @@ body{
   .slogan-mobile{
     display: block;
     text-align: center;
-    margin: 1rem;
     img{
       width: 112px;
       height: 112px;
@@ -141,10 +140,9 @@ body{
       justify-content: space-between;
       align-items: center;
       margin: 1rem 0;
-      width: 100%;
+     
 
       @media #{$xs} {
-        margin-right: 0.7rem;
         margin-top: 0;
       }
       
@@ -169,9 +167,6 @@ body{
       border-radius: 10px;
       margin-top: 1rem;
       width: 100%;
-      @media #{$xs} {
-        margin-right: 1rem;
-      }
     }
   }
   form{
