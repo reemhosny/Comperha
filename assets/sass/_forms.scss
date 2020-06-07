@@ -1,0 +1,211 @@
+.input{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-bottom:1px solid #E0E0E0;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    outline: none;
+    padding-right: 1rem;
+    font-size: 16px;
+    min-height: 44px;
+    &:hover{
+      outline: none;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom:1px solid #E0E0E0 ;
+    }
+    &:focus{
+      outline: none;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom:1px solid #E0E0E0 ;
+  }
+    font-family: $mainFont;
+}
+.select{
+    color: #000;
+    font-size: 16px;
+    height: auto !important;
+    select:not([multiple]) {
+        font-family: $mainFont;
+        min-height: 44px;
+        padding-left: 2.5em;
+        padding-right: 1rem;
+        font-size: 16px !important;
+        border-radius: 8px;
+    }
+    &:not(.is-multiple):not(.is-loading)::after {
+        border-color: #000;
+        left: 1.125em;
+        right: auto;
+    }
+    select option{
+        color: #000;
+        font-size: 16px;
+        font-family: $mainFont;
+    }
+    &.is-empty select{
+        color: #000;
+        @media #{$xxs} {
+          font-size: 13px !important;
+          
+        }
+    }
+}
+.label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: $grey !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:$grey !important;;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: $grey !important;;
+  font-size: 18px;
+}
+
+.app-filter{
+  ::-webkit-input-placeholder { /* Edge */
+    color: $grey !important;
+    font-size: 16px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $grey !important;;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ::placeholder {
+    color: $grey !important;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
+  .login-page{
+
+  }
+  .b-slider .b-slider-fill{
+    z-index: 1;
+  }
+  .b-slider{
+    .b-slider-thumb-wrapper{
+        z-index: 2;
+      }
+      .b-tooltip:before, .b-tooltip:after{
+        visibility: visible;
+        opacity: 1;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .b-tooltip:after{
+        padding: 0.35rem 0.35rem;
+    }
+   .b-slider-tick{
+        background-color: #fff;
+    }
+  } 
+
+.field.is-floating-label .label, .field.is-floating-in-label .label {
+    left: auto;
+    right: 2.4rem;
+    font-size: 14px;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon{
+  height: 100%;
+}
+
+.b-checkbox.checkbox .control-label {
+  padding-right: 0.5em;
+  padding-left: 0;
+}
+
+.group-button{
+  display: flex;
+  .button{
+    border-radius: 0;
+    &:first-child{
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &:last-child{
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+}
+
+
+.field.has-addons .control:first-child:not(:only-child) .button, .field.has-addons .control:first-child:not(:only-child) .input, .field.has-addons .control:first-child:not(:only-child) .taginput .taginput-container.is-focusable, .taginput .field.has-addons .control:first-child:not(:only-child) .taginput-container.is-focusable, .field.has-addons .control:first-child:not(:only-child) .select select {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.field.has-addons .control:not(:first-child):not(:last-child) .button, .field.has-addons .control:not(:first-child):not(:last-child) .input, .field.has-addons .control:not(:first-child):not(:last-child) .taginput .taginput-container.is-focusable, .taginput .field.has-addons .control:not(:first-child):not(:last-child) .taginput-container.is-focusable, .field.has-addons .control:not(:first-child):not(:last-child) .select select{
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.field.has-addons .control:last-child:not(:only-child) .button, .field.has-addons .control:last-child:not(:only-child) .input, .field.has-addons .control:last-child:not(:only-child) .taginput .taginput-container.is-focusable, .taginput .field.has-addons .control:last-child:not(:only-child) .taginput-container.is-focusable, .field.has-addons .control:last-child:not(:only-child) .select select{
+  border-radius: 8px;
+}
+
+.block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .radio{
+      margin: 10px 20px;
+  }
+  .b-radio.radio .control-label {
+      padding-right: 0.5em;
+      padding-left: 0;
+  }
+}
+
+
+.has-addons .group-button{
+  .button:last-child{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+  }
+}
+.field{
+  .control:last-child{
+    .button{
+      border-bottom-right-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-left-radius: 8px !important;
+      border-top-left-radius: 8px !important;
+      border-right: 0;
+    }
+  }
+}
+
+a.dropdown-item, .dropdown .dropdown-menu .has-link a, button.dropdown-item{
+  padding-right: 1rem;
+  text-align: right;
+  outline: 0;
+  box-shadow: none;
+}

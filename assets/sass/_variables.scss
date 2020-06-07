@@ -2,6 +2,8 @@
 $mainColor: #095AAE;
 $secondColor: #69AF44;
 $blackColor: #4F4F4F;
+$grey:#828282;
+
 
 
 
@@ -33,7 +35,11 @@ $swmd:"(min-width: 991.98px) and (max-width: 1023px)";
 
 $xmd: "(max-width: 1023.98px)";
 
-$smd: "(min-width: 1023.98px)";
+$max: "(max-width: 1024px)";
+
+$smd: "(min-width: 1024px)";
+
+$mmw: "(min-width: 768px)";
 
 
 // Large devices (desktops, 992px and up)

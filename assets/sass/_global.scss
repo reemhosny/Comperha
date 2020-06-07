@@ -28,3 +28,153 @@ body{
   
 }
 
+.main-layout{
+  padding-top: 100px;
+  @media #{$xmd}{
+    padding-top: 74px;
+  }
+}
+
+.app-credit{
+  .slogan{
+    margin-top: 5rem;
+    @media #{$xxs} {
+      margin-top: 2rem;
+    }
+    @media #{$mwsm} {
+      display: none;
+      
+    }
+    .img-desktop{
+      @media #{$mwsm} {
+        display: none; 
+      }
+    }
+    .text-desktop{
+      display: block;
+      @media #{$mwsm} {
+        display: none;
+        
+      }
+      
+      &__1{
+        color: $blackColor;
+        font-size: 30px;
+        font-family: $mainFont;
+        font-weight: bold;
+      }
+      &__2{
+        color: $blackColor;
+        font-size: 25px;
+        font-family: $mainFont;
+        font-weight: normal;
+  
+      }
+      &__3{
+        color: $secondColor;
+        font-size: 70px;
+        font-family: $mainFont;
+        font-weight: bolder;
+      }
+      &__4{
+        color: $blackColor;
+        font-size: 25px;
+        font-family: $mainFont;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .slogan-mobile{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    img{
+      width: 112px;
+      height: 112px;
+    }
+
+    @media #{$mmw} {
+      display: none;
+    }
+
+    .text-1{
+      color: $blackColor;
+      font-size: 20px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+    .text-2{
+      color: $blackColor;
+      font-size: 20px;
+      font-family: $mainFont;
+      font-weight: normal;
+
+    }
+    .text-3{
+      color: $secondColor;
+      font-size: 45px;
+      font-family: $mainFont;
+      font-weight: bolder;
+    }
+    .text-4{
+      color: $blackColor;
+      font-size: 18px;
+      font-family: $mainFont;
+      font-weight: normal;
+    }
+
+  }
+
+  .filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    @media #{$xs} {
+      margin-top: 0;
+    }
+    
+    .filter-btn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      width: 100%;
+
+      @media #{$xs} {
+        margin-right: 0.7rem;
+        margin-top: 0;
+      }
+      
+      .button{
+        @media #{$xxs} {
+          font-size: 11px !important;
+        }
+        @media #{$xs} {
+          font-size: 18px;
+        }
+        @media #{$sm} {
+          font-size: 20px;
+        }
+
+      }
+      
+    }
+
+    .filter-form{
+      background: #FFFFFF;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 1rem;
+      width: 100%;
+      @media #{$xs} {
+        margin-right: 1rem;
+      }
+    }
+  }
+  form{
+    padding: 1rem;
+  }
+}
