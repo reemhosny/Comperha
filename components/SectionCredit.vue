@@ -58,12 +58,9 @@
                                <b-input placeholder="الدخل الشهري "></b-input>
                             </b-field>
                             <div class="form-action">
-                               <button type="submit" class="button is-green btn-block mt-4" expanded>تأكيد</button>
+                               <nuxt-link to="/landing" type="submit" class="button is-green btn-block mt-4" expanded>تأكيد</nuxt-link>
                             </div>
-
-
                         </form>
-
                     </div>
                 </div>
                 

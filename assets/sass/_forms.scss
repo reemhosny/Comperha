@@ -23,58 +23,40 @@
       border-right: none;
       border-top: none;
       border-bottom:1px solid #E0E0E0 ;
-  }
+    }
     font-family: $mainFont;
 }
 .select{
     color: white;
     font-size: 16px;
     height: auto !important;
-    outline: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+
     select:not([multiple]) {
         font-family: $mainFont;
         min-height: 44px;
         padding-left: 2.5em;
         padding-right: 1rem;
         font-size: 16px !important;
-        border-radius: 8px;
+        border-radius: 0;
         background-color: $mainColor;
         outline: none;
         border-left: none;
         border-right: none;
         border-top: none;
-        border-radius: 0;
+        border-bottom:1px solid #E0E0E0 ;
     }
     &:not(.is-multiple):not(.is-loading)::after {
-        border-bottom:1px solid #E0E0E0 ;
         left: 1.125em;
         right: auto;
-        outline: none;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-radius: 0;
     }
     select option{
         color: #000;
+        background-color: white;
         font-size: 16px;
         font-family: $mainFont;
-        outline: none;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-radius: 0;
     }
     &.is-empty select{
         color: white;
-        outline: none;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-radius: 0;
         // @media #{$xxs} {
         //   font-size: 13px !important;
           

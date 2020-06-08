@@ -4,8 +4,8 @@
       <!-- Credit -->
       <SectionCredit />
 
-      <!-- Collection Ads -->
-      <!-- <AdsCollection /> -->
+     
+      <FilterItems/>
 
       <!-- Slider  -->
       <!-- <AdsSlider/> -->
@@ -20,9 +20,12 @@
 
 <script>
 import SectionCredit from '../components/SectionCredit'
+import FilterItems from '../components/FilterItems'
+
 export default {
   components:{
-    SectionCredit
+    SectionCredit,
+    FilterItems
 
   }
   
