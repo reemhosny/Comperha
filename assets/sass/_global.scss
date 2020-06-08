@@ -41,7 +41,7 @@ body{
     @media #{$xxs} {
       margin-top: 2rem;
     }
-    @media #{$mwsm} {
+    @media #{$xmd} {
       display: none;
       
     }
@@ -62,25 +62,36 @@ body{
         font-size: 30px;
         font-family: $mainFont;
         font-weight: bold;
+        @media #{$mlg} {
+          font-size: 20px;
+        }
       }
       &__2{
         color: $blackColor;
         font-size: 25px;
         font-family: $mainFont;
         font-weight: normal;
-  
+        @media #{$mlg} {
+          font-size: 18px;
+        }  
       }
       &__3{
         color: $secondColor;
         font-size: 70px;
         font-family: $mainFont;
         font-weight: bolder;
+        @media #{$mlg} {
+          font-size: 55px;
+        } 
       }
       &__4{
         color: $blackColor;
         font-size: 25px;
         font-family: $mainFont;
         font-weight: normal;
+        @media #{$mlg} {
+          font-size: 20px;
+        } 
       }
     }
   }
@@ -88,12 +99,13 @@ body{
   .slogan-mobile{
     display: block;
     text-align: center;
+    margin: 1rem auto;
     img{
       width: 112px;
       height: 112px;
     }
 
-    @media #{$mmw} {
+    @media #{$smd} {
       display: none;
     }
 
@@ -130,7 +142,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
+    margin: 1rem auto;
     @media #{$xs} {
       margin-top: 0;
     }
@@ -139,9 +152,8 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 1rem 0;
+      // margin: 1rem auto;
      
-
       @media #{$xs} {
         margin-top: 0;
       }
@@ -151,10 +163,10 @@ body{
           font-size: 11px !important;
         }
         @media #{$xs} {
-          font-size: 18px;
+          font-size: 17px;
         }
         @media #{$sm} {
-          font-size: 20px;
+          font-size: 23px;
         }
 
       }
@@ -166,7 +178,19 @@ body{
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       margin-top: 1rem;
-      width: 100%;
+      min-width:100%;
+
+      @media #{$md} {
+        width: 360px;
+      }
+      @media #{$swmd} {
+        width: 360px;
+      }
+
+      @media #{$smd} {
+        width: 365px;
+      }
+
     }
   }
   form{
