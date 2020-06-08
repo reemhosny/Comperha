@@ -27,9 +27,13 @@
     font-family: $mainFont;
 }
 .select{
-    color: #000;
+    color: white;
     font-size: 16px;
     height: auto !important;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
     select:not([multiple]) {
         font-family: $mainFont;
         min-height: 44px;
@@ -37,23 +41,44 @@
         padding-right: 1rem;
         font-size: 16px !important;
         border-radius: 8px;
+        background-color: $mainColor;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0;
     }
     &:not(.is-multiple):not(.is-loading)::after {
-        border-color: #000;
+        border-bottom:1px solid #E0E0E0 ;
         left: 1.125em;
         right: auto;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0;
     }
     select option{
         color: #000;
         font-size: 16px;
         font-family: $mainFont;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0;
     }
     &.is-empty select{
-        color: #000;
-        @media #{$xxs} {
-          font-size: 13px !important;
+        color: white;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0;
+        // @media #{$xxs} {
+        //   font-size: 13px !important;
           
-        }
+        // }
     }
 }
 .label {
@@ -78,29 +103,56 @@
   font-size: 18px;
 }
 
-.app-filter{
+.landing-form{
+  .input{
+    background: $mainColor 0% 0% no-repeat padding-box;
+    border-bottom:1px solid #E0E0E0;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    outline: none;
+    padding-right: 1rem;
+    font-size: 16px;
+    min-height: 44px;
+    margin-bottom: 0.5rem;
+    &:hover{
+      outline: none;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom:1px solid #E0E0E0 ;
+    }
+    &:focus{
+      outline: none;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom:1px solid #E0E0E0 ;
+  }
+    font-family: $mainFont;
+}
   ::-webkit-input-placeholder { /* Edge */
-    color: $grey !important;
+    color: white !important;
     font-size: 16px;
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $grey !important;;
+    color: white !important;;
     font-size: 18px;
     font-weight: bold;
   }
   
   ::placeholder {
-    color: $grey !important;
+    color: white !important;
     font-size: 18px;
     font-weight: bold;
   }
 
 }
 
-  .login-page{
-
-  }
+  
   .b-slider .b-slider-fill{
     z-index: 1;
   }

@@ -168,6 +168,9 @@ body{
         @media #{$sm} {
           font-size: 23px;
         }
+         @media #{$mlg} {
+          font-size: 11px;
+        }
 
       }
       
@@ -187,13 +190,21 @@ body{
         width: 360px;
       }
 
-      @media #{$smd} {
-        width: 365px;
-      }
+      // @media #{$smd} {
+      //   width: 365px;
+      // }
 
     }
   }
   form{
     padding: 1rem;
   }
+}
+
+
+.landing-form{
+  width: 100%;
+  background-color: $mainColor;
+  border-radius: 40px 40px 0px 0px;
+  background-size: cover; 
 }

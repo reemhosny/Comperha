@@ -23,27 +23,33 @@
                         <a href="#" class="button is-outlined ml-2"> قرض شخصي</a>
                         <a href="#" class="button is-outlined">قرض سيارة</a>
                     </div>
-                    <div class="filter-form">
-                        <form class="my-1">
-                            <b-field>
-                               <b-input placeholder="مبلغ القرض"></b-input>
-                            </b-field>
-                            <b-field>
-                               <b-input placeholder="مبلغ القرض"></b-input>
-                            </b-field>
-                            <b-field>
-                               <b-input placeholder="الدخل الشهري "></b-input>
-                            </b-field>
-                            <div class="form-action">
-                               <button type="submit" class="button is-green btn-block mt-4" expanded>تأكيد</button>
-                            </div>
-                        </form>
-
-                    </div>
                 </div>
                 
             </div>
         </div>
+        <div class="landing-form">
+                        <form class="my-1">
+                            <b-field>
+                               <b-input placeholder="الاسم"></b-input>
+                            </b-field>
+                            <b-field>
+                               <b-input placeholder="رقم الموبايل"></b-input>
+                            </b-field>
+                            <b-field>
+                               <b-input placeholder="القرض المطلوب"></b-input>
+                            </b-field>
+                             <b-field>
+                                <b-select placeholder="اختار المنتج" expanded>
+                                    <option value="1"> 1</option>
+                                    <option value="2"> 2</option>
+                                </b-select>
+                           </b-field>
+                            <div class="form-action">
+                               <button type="submit" class="button is-green btn-block mt-4" expanded>ارسل</button>
+                            </div>
+                        </form>
+
+                    </div>
 
     </section>
 </template>
